@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mod at Iw8-mod" />
+    <title>Pomder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=3" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome/+esm"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome/menu/+esm"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome/media-theme-element/+esm"></script>
+  </head>
+  <body>
+    <div class="page-loader" id="page-loader">
+      <img class="loader-pfp" src="assets/pfp.gif" alt="Pomder profile" />
+      <div class="loader-ring"></div>
+      <p>Loading Pomder...</p>
+    </div>
+    <div class="page-shell">
+      <main>
+        <section id="hero" class="hero">
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/background.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="profile-frame">
+              <img class="profile-photo" src="assets/pfp.gif" alt="Portrait of Pomder" />
+            </div>
+            <h1>Pomder</h1>
+            <p class="subtitle">Music Artist • Little Developer</p>
+            <p class="hero-copy">
+              Music, visuals, and small tools shaped by instinct, mood, and quiet energy.
+            </p>
+            <div class="social-row">
+              <a href="https://discord.gg/demonware" target="_blank" rel="noreferrer">
+                <img class="social-icon" src="assets/discord.png" alt="Discord" aria-hidden="true" />
+                Discord
+              </a>
+              <a href="https://soundcloud.com/pomderr" target="_blank" rel="noreferrer">
+                <img class="social-icon" src="assets/soundcloud.png" alt="SoundCloud" aria-hidden="true" />
+                SoundCloud
+              </a>
+              <a href="https://github.com/pomder" target="_blank" rel="noreferrer">
+                <img class="social-icon" src="assets/github.png" alt="GitHub" aria-hidden="true" />
+                GitHub
+              </a>
+            </div>
+
+            <div class="audio-player">
+              <img class="audio-cover" src="assets/ben10cover.jpg" alt="Ben10 cover art" />
+              <div class="audio-meta">
+                <div class="audio-title-row">
+                  <div class="audio-info">
+                    <div class="audio-title">Ben10</div>
+                    <div class="audio-subtitle">sherifflazone91</div>
+                  </div>
+                      <button class="audio-play" type="button" aria-label="Play Sherifflazone91">Play</button>
+                </div>
+                <div class="audio-progress">
+                  <input class="audio-seek" type="range" min="0" max="100" value="0" aria-label="Seek audio" />
+                  <div class="audio-time">0:00 / 0:00</div>
+                </div>
+              </div>
+              <audio id="ben10-player" src="songs/ben10.mp3" preload="metadata"></audio>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close preview">Close</button>
+      <button class="lightbox-nav prev" aria-label="Previous image">Prev</button>
+      <div class="lightbox-stage">
+        <img src="" alt="" />
+        <p class="lightbox-caption"></p>
+      </div>
+      <button class="lightbox-nav next" aria-label="Next image">Next</button>
+    </div>
+
+    <div class="custom-cursor" aria-hidden="true"></div>
+
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
